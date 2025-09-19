@@ -1,0 +1,101 @@
+body {
+  color: rgb(34, 34, 34);
+  display: flex;
+  flex-direction: column;
+  height: 100vh;
+  margin: 0;
+}
+
+main {
+  background-color: azure;
+  display: flex;
+  flex-grow: 4;
+}
+aside {
+  flex-grow: 1;
+  background-color: rgb(255, 199, 199);
+  margin: 0;
+  padding: 0;
+}
+aside > ul {
+  padding: 0;
+}
+
+aside > ul > li {
+  padding: 1ch;
+  text-decoration: none;
+  list-style: none;
+  list-style-type: none;
+  border: 1px solid rgb(255, 128, 128);
+  border-radius: 0.5em;
+  margin: 1em;
+  padding: 1em;
+  transition: 0.2s;
+  color: rgb(179, 0, 24);
+}
+aside > ul > li:hover {
+  background-color: darkred;
+  cursor: pointer;
+  color: #fae9e9;
+}
+
+article {
+  margin: 1em;
+  padding: 1em;
+  font-family: "Gill Sans", "Gill Sans MT", Calibri, "Trebuchet MS", sans-serif;
+  flex-grow: 3;
+}
+.brand {
+  text-transform: uppercase;
+  font-weight: 900;
+  color: brown;
+  font-size: x-large;
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+
+header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background-color: rgb(252, 237, 237);
+  padding: 1em;
+}
+nav > a {
+  padding: 1ch;
+  border: 1px solid rgb(255, 171, 171);
+  border-radius: 1em;
+  text-decoration: none;
+  color: brown;
+  transition: 0.3s;
+}
+nav > a:hover {
+  background-color: brown;
+  color: beige;
+}
+
+footer {
+  background-color: brown;
+  flex-grow: 1;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-family: "Trebuchet MS", "Lucida Sans Unicode", "Lucida Grande",
+    "Lucida Sans", Arial, sans-serif;
+  color: #fae9e9;
+  border-top: 1px solid rgb(147, 6, 6);
+}
+
+.testimonial {
+  background-color: #cdf5f5;
+  padding: 0.3em;
+  border-radius: 1em;
+  display: flex;
+  flex-direction: column;
+  align-items: end;
+}
+
+.testimonial > figcaption {
+  color: rgb(111, 142, 132);
+  font-size: small;
+  padding: 0.3em;
+}
