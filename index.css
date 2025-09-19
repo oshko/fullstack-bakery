@@ -61,6 +61,11 @@ header {
   background-color: rgb(252, 237, 237);
   padding: 1em;
 }
+nav {
+  display: flex;
+  gap: 0.5em;
+  flex-wrap: wrap;
+}
 nav > a {
   padding: 1ch;
   border: 1px solid rgb(255, 171, 171);
